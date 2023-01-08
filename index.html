@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="container">
+            <h4>Subscribe Us</h4>
+            <form action="thank.html" onsubmit="return validation()">
+                <div class="user-info">
+                    <label for="username">Your Name</label>
+                    <input type="text" name="visitor-name" id="username" placeholder="Enter Your Name">
+                    <span id="user-error"></span>
+                </div>
+                <div class="user-info">
+                    <label for="useremail">Your Email</label>
+                    <input type="email" name="visitor-mail" id="useremail" placeholder="Enter Your Email">
+                    <span id="mail-error"></span>
+                    <div class="submit">
+                        <input type="submit" value="Subscribe">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/costom.js"></script>
+</body>
+</html>
